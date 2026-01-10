@@ -1,24 +1,28 @@
 <?php
 $news = [
     [
+        "id"    => 1,
         "image" => "fotoebi/ed18878d23e18b89dd9e94f6bd8ace80.jpg",
         "title" => "ნორისი მსოფლიო ჩემპიონი გახდა",
-        "text"  => "ვერსტაპენმა ყველაფერი ცადა, მაგრამ ნორისი მაინც ჩემპიონია"
+        "text"  => "ვერსტაპენმა ყველაფერი ცადა, მაგრამ ნორისი მაინც ჩემპიონია. სეზონი დაძაბული იყო ბოლო რბოლამდე."
     ],
     [
+        "id"    => 2,
         "image" => "fotoebi/262378d8332b6e9a091ecb322a2f00dc.jpg",
         "title" => "Ferrari შემდეგი სეზონისთვის ემზადება",
-        "text"  => "შეძლებს ჰამილტონი მერვედ გახდეს ჩემპიონი?"
+        "text"  => "Ferrari აქტიურად მუშაობს ახალ ბოლიდზე. გუნდის მიზანია ჩემპიონობისთვის ბრძოლა."
     ],
     [
+        "id"    => 3,
         "image" => "fotoebi/f354f62224edc1c763748d73af035822.jpg",
         "title" => "Mercedes-ში ახალი ძრავით კმაყოფილები არიან!",
-        "text"  => "მიიღებს ჯორჯ რასელი ნანატრ ბოლიდს?"
+        "text"  => "გუნდის ინჟინრები ამბობენ, რომ ახალი ძრავი კონკურენტუნარიანია."
     ],
     [
+        "id"    => 4,
         "image" => "fotoebi/5a11701c446ac0930f2dc23d63c80ca3.jpg",
         "title" => "დებიუტანტი Cadillac",
-        "text"  => "გამოუცდელი ბოლიდი და გამოცდილი მრბოლელები"
+        "text"  => "Cadillac ფორმულა 1-ში დებიუტისთვის ემზადება გამოცდილი მრბოლელებით."
     ]
 ];
 ?>
@@ -27,7 +31,7 @@ $news = [
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formula 1 | Home</title>
+    <title>Formula 1 | News</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -41,19 +45,14 @@ $news = [
     </nav>
 </header>
 
-<section class="hero">
-    <h2>უახლესი ამბები და რეიტინგები</h2>
-</section>
-
 <section class="news">
-    <h2>უახლესი ამბები</h2>
+    <h2>ყველა სიახლე</h2>
 
     <?php foreach ($news as $item): ?>
         <div class="news-card">
-            <img src="<?= $item['image'] ?>" alt="<?= $item['title'] ?>">
+            <img src="<?= $item['image'] ?>">
             <h3><?= $item['title'] ?></h3>
             <p><?= $item['text'] ?></p>
-            <a href="news.php">წაიკითხეთ მეტი ინფორმაცია...</a>
         </div>
     <?php endforeach; ?>
 
