@@ -132,11 +132,35 @@ table th {
     background: #e10600;
 }
 
-/* ===== FOOTER ===== */
+
 footer {
     background: #000;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
     font-size: 14px;
+}
+
+
+
+.standings {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #000;
+}
+
+.standings table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.standings th, .standings td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.standings th {
+    background-color: #222;
+    color: #fff;
 }
